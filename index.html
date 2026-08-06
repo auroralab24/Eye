@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="ko" style="">
+<html class="scroll-smooth" lang="ko">
 
 <head>
   <meta charset="utf-8">
@@ -7,9 +7,6 @@
   <title>OphthalmaCare | BlueEye Clinic</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&amp;display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
     rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
@@ -110,6 +107,7 @@
 
     .text-gradient {
       background: linear-gradient(135deg, #00163b 0%, #0061a7 100%);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -147,8 +145,8 @@
   <header class="w-full top-0 sticky z-50 bg-surface/95 dark:bg-on-background/95 backdrop-blur shadow-sm">
     <div class="max-w-[1536px] mx-auto flex justify-between items-center px-margin-desktop py-4 relative">
       <div class="flex items-center">
-        <a class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim tracking-tight"
-          href="#">BlueEye Clinic</a>
+        <a class="text-2xl sm:text-3xl font-black text-primary tracking-tight"
+          href="index.html">BlueEye Clinic</a>
       </div>
       <nav class="hidden lg:flex items-center gap-10 ml-auto" id="mainNav">
         <a class="text-secondary font-bold border-b-2 border-secondary pb-1 font-body-md text-body-md cursor-pointer transition-all active:scale-95"
@@ -160,7 +158,10 @@
         <a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary font-body-md text-body-md cursor-pointer transition-all active:scale-95"
           href="#staffSection">의료진</a>
         <a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary font-body-md text-body-md cursor-pointer transition-all active:scale-95"
+          href="guide.html">진료안내</a>
+        <a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary font-body-md text-body-md cursor-pointer transition-all active:scale-95"
           href="#locationSection">오시는 길</a>
+        <a href="reservation.html" class="bg-primary text-white text-sm px-5 py-2 rounded-full font-bold hover:bg-secondary transition-all active:scale-95 shadow-sm">온라인 예약</a>
       </nav>
 
     </div>
@@ -169,7 +170,7 @@
   <aside class="fixed right-8 bottom-8 z-40 hidden xl:flex flex-col items-center gap-3">
     <div
       class="flex flex-col items-center bg-primary text-white rounded-full py-6 px-3 clinical-shadow gap-6 border border-white/10">
-      <a class="flex flex-col items-center gap-1 group" href="#">
+      <a class="flex flex-col items-center gap-1 group cursor-pointer" href="reservation.html">
         <span
           class="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">calendar_month</span>
         <span class="text-[10px] font-bold">RESERVE</span>
@@ -219,23 +220,23 @@
               최첨단 장비와 풍부한 경험의 의료진이 정밀한 진단과 안전한 수술을 약속합니다.
             </p>
             <div class="flex gap-4 pt-4">
-              <button
-                class="bg-primary text-white h-[48px] px-8 rounded-lg font-bold clinical-shadow hover:translate-y-[-2px] transition-all">
+              <a href="reservation.html"
+                class="inline-flex items-center justify-center bg-primary text-white h-[48px] px-8 rounded-lg font-bold clinical-shadow hover:translate-y-[-2px] active:scale-95 transition-all cursor-pointer">
                 진료 예약하기
-              </button>
-              <button
-                class="border-2 border-primary text-primary h-[48px] px-8 rounded-lg font-bold hover:bg-primary hover:text-white transition-all">
+              </a>
+              <a href="guide.html"
+                class="inline-flex items-center justify-center border-2 border-primary text-primary h-[48px] px-8 rounded-lg font-bold hover:bg-primary hover:text-white active:scale-95 transition-all cursor-pointer">
                 진료안내 보기
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Slide 2 (Video: magnific_DBMYj74pcl.mp4) -->
+      <!-- Slide 2 (Video: magnific_Ifvf4eqtvE.mp4) -->
       <div class="hero-slide absolute inset-0 transition-opacity duration-700 opacity-0 pointer-events-none z-0">
         <video id="hero-video-2" muted playsinline class="absolute inset-0 w-full h-full object-cover">
-          <source src="images/magnific_DBMYj74pcl.mp4" type="video/mp4">
+          <source src="images/magnific_Ifvf4eqtvE.mp4" type="video/mp4">
         </video>
         <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/50 to-transparent"></div>
 
@@ -255,14 +256,14 @@
               세계 수준의 레이저 수술 장비로 가장 선명한 시력을 되찾아 드립니다.
             </p>
             <div class="flex gap-4 pt-4">
-              <button
-                class="bg-primary text-white h-[48px] px-8 rounded-lg font-bold clinical-shadow hover:translate-y-[-2px] transition-all">
+              <a href="reservation.html"
+                class="inline-flex items-center justify-center bg-primary text-white h-[48px] px-8 rounded-lg font-bold clinical-shadow hover:translate-y-[-2px] active:scale-95 transition-all cursor-pointer">
                 진료 예약하기
-              </button>
-              <button
-                class="border-2 border-primary text-primary h-[48px] px-8 rounded-lg font-bold hover:bg-primary hover:text-white transition-all">
+              </a>
+              <a href="guide.html"
+                class="inline-flex items-center justify-center border-2 border-primary text-primary h-[48px] px-8 rounded-lg font-bold hover:bg-primary hover:text-white active:scale-95 transition-all cursor-pointer">
                 진료안내 보기
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -615,7 +616,7 @@
               <!-- Slide 1 -->
               <div class="feature-slide absolute inset-0 transition-all duration-500 opacity-0 pointer-events-none z-0">
                 <img class="w-full h-full object-cover" alt="1:1 맞춤 진료"
-                  src="images/facility_vip_lounge_1785209437783.png">
+                  src="images/feature_custom_consultation.png">
                 <!-- Overlay Box: #0d2b5b with 70% opacity -->
                 <div
                   class="absolute bottom-6 left-6 right-6 bg-[#0d2b5b]/70 backdrop-blur-md p-6 rounded-2xl border border-white/20 text-white clinical-shadow">
@@ -722,7 +723,7 @@
                 <div
                   class="group relative rounded-2xl overflow-hidden clinical-shadow bg-white/5 border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:border-secondary/50 smooth-card">
                   <div class="h-64 sm:h-72 overflow-hidden relative">
-                    <img src="images/facility_vip_lounge_1785209437783.png" alt="VIP 프라이빗 라운지"
+                    <img src="images/facility_vip_lounge.png" alt="VIP 프라이빗 라운지"
                       class="block w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                     <div class="absolute inset-0 bg-gradient-to-t from-tertiary via-tertiary/20 to-transparent"></div>
                   </div>
@@ -739,7 +740,7 @@
                   class="group relative rounded-2xl overflow-hidden clinical-shadow bg-white/5 border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:border-secondary/50 smooth-card">
                   <div class="h-64 sm:h-72 overflow-hidden relative">
                     <img
-                      src="images/facility_vip_lounge_1785209437783.png"
+                      src="images/facility_premium_reception.png"
                       alt="프리미엄 접수 센터"
                       class="block w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                     <div class="absolute inset-0 bg-gradient-to-t from-tertiary via-tertiary/20 to-transparent"></div>
@@ -757,7 +758,7 @@
                   class="group relative rounded-2xl overflow-hidden clinical-shadow bg-white/5 border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:border-secondary/50 smooth-card">
                   <div class="h-64 sm:h-72 overflow-hidden relative">
                     <img
-                      src="images/facility_exam_center_1785209425600.png"
+                      src="images/facility_eye_exam_suite.png"
                       alt="1:1 정밀 검사 스위트"
                       class="block w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                     <div class="absolute inset-0 bg-gradient-to-t from-tertiary via-tertiary/20 to-transparent"></div>
@@ -828,7 +829,7 @@
                   class="group relative rounded-2xl overflow-hidden clinical-shadow bg-white/5 border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:border-secondary/50 smooth-card">
                   <div class="h-64 sm:h-72 overflow-hidden relative">
                     <img
-                      src="images/facility_operating_room_1785209449552.png"
+                      src="images/facility_sterilization_center.png"
                       alt="중앙 멸균 차단 센터"
                       class="block w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                     <div class="absolute inset-0 bg-gradient-to-t from-tertiary via-tertiary/20 to-transparent"></div>
@@ -915,8 +916,8 @@
               <div class="lg:col-span-5 flex justify-center">
                 <div
                   class="relative w-full max-w-[380px] aspect-[4/5] rounded-2xl overflow-hidden clinical-shadow bg-surface-container-high border-4 border-white">
-                  <img class="w-full h-full object-cover" alt="김안과 원장"
-                    src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80">
+                  <img class="w-full h-full object-cover object-top" alt="김안과 원장"
+                    src="images/의료진/portrait-smiling-young-man.jpg">
                 </div>
               </div>
             </div>
@@ -975,7 +976,7 @@
                 <div
                   class="relative w-full max-w-[380px] aspect-[4/5] rounded-2xl overflow-hidden clinical-shadow bg-surface-container-high border-4 border-white">
                   <img class="w-full h-full object-cover" alt="이밝음 원장"
-                    src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80">
+                    src="images/의료진/magnific_XmItf2KBfo.jpeg">
                 </div>
               </div>
             </div>
@@ -1033,8 +1034,8 @@
               <div class="lg:col-span-5 flex justify-center">
                 <div
                   class="relative w-full max-w-[380px] aspect-[4/5] rounded-2xl overflow-hidden clinical-shadow bg-surface-container-high border-4 border-white">
-                  <img class="w-full h-full object-cover" alt="박선명 원장"
-                    src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=80">
+                  <img class="w-full h-full object-cover object-top" alt="박선명 원장"
+                    src="images/의료진/magnific_rgsl7wuxtc.jpeg">
                 </div>
               </div>
             </div>
@@ -1229,9 +1230,9 @@
         </div>
         <div class="flex flex-col items-center gap-6">
           <div class="relative w-full h-48 rounded-2xl overflow-hidden bg-primary/5 flex items-center justify-center">
-            <img class="absolute inset-0 w-full h-full object-cover"
+            <img class="absolute inset-0 w-full h-full object-cover object-top"
               alt="김안과 원장"
-              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80">
+              src="images/의료진/portrait-smiling-young-man.jpg">
           </div>
           <div class="text-center">
             <h3 class="text-2xl font-bold text-primary">김안과 원장</h3>
@@ -1246,6 +1247,370 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Online Reservation Modal (온라인 예약) -->
+  <div id="reservationModal" class="fixed inset-0 z-[999] hidden items-center justify-center p-4 sm:p-6 overflow-y-auto bg-black/70 backdrop-blur-md transition-all duration-300">
+    <div class="relative w-full max-w-5xl bg-white rounded-3xl shadow-2xl overflow-hidden my-auto border border-gray-100 transition-all transform scale-100">
+      
+      <!-- Modal Top Header -->
+      <div class="flex items-center justify-between px-8 py-5 border-b border-gray-100 bg-surface-bright">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-2xl">calendar_month</span>
+          </div>
+          <div>
+            <h2 class="text-2xl font-black text-primary tracking-tight">온라인 예약</h2>
+            <p class="text-xs text-on-surface-variant">BlueEye 안과의 간편하고 빠른 1:1 맞춤 예약 서비스입니다.</p>
+          </div>
+        </div>
+        <button onclick="closeReservationModal()" class="w-10 h-10 rounded-full bg-gray-100 hover:bg-primary hover:text-white flex items-center justify-center text-gray-500 transition-all active:scale-90">
+          <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+      </div>
+
+      <!-- Modal Body: 2 Columns -->
+      <div class="p-6 md:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 bg-[#f8fafc]">
+        
+        <!-- Left Column: Calendar & Date/Time Selector -->
+        <div class="lg:col-span-6 flex flex-col justify-between space-y-6">
+          
+          <!-- Calendar Card -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+            <!-- Calendar Month Header -->
+            <div class="flex items-center justify-between mb-6 px-2">
+              <button onclick="changeResMonth(-1)" type="button" class="w-9 h-9 flex items-center justify-center hover:bg-gray-100 rounded-full text-gray-600 transition-colors active:scale-90">
+                <span class="material-symbols-outlined text-xl">chevron_left</span>
+              </button>
+              <h3 class="text-2xl font-black text-gray-900 tracking-wider" id="resMonthYearText">2026 .08</h3>
+              <button onclick="changeResMonth(1)" type="button" class="w-9 h-9 flex items-center justify-center hover:bg-gray-100 rounded-full text-gray-600 transition-colors active:scale-90">
+                <span class="material-symbols-outlined text-xl">chevron_right</span>
+              </button>
+            </div>
+
+            <!-- Days Header -->
+            <div class="grid grid-cols-7 text-center font-bold text-sm text-gray-500 mb-4">
+              <span class="text-red-500">일</span>
+              <span>월</span>
+              <span>화</span>
+              <span>수</span>
+              <span>목</span>
+              <span>금</span>
+              <span class="text-blue-500">토</span>
+            </div>
+
+            <!-- Calendar Days Grid -->
+            <div class="grid grid-cols-7 gap-y-2 gap-x-1 text-center font-medium text-base" id="resCalendarDays">
+              <!-- Dynamically populated via JS -->
+            </div>
+          </div>
+
+          <!-- Selected Date & Time Selector Bar -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <!-- Selected Date Box -->
+            <div class="bg-white rounded-2xl px-5 py-4 shadow-sm border border-gray-200 flex items-center justify-center gap-2 text-gray-800 font-bold text-sm">
+              <span class="material-symbols-outlined text-secondary text-lg">event</span>
+              <span id="selectedDateDisplayText">2026.08.06</span>
+            </div>
+            
+            <!-- Time Select Dropdown -->
+            <div class="relative">
+              <select id="resTimeSelect" class="w-full bg-white rounded-2xl px-5 py-4 pr-10 shadow-sm border border-gray-200 font-bold text-sm text-gray-800 appearance-none cursor-pointer focus:outline-none focus:border-secondary">
+                <option value="09:00">오전 09:00</option>
+                <option value="10:00">오전 10:00</option>
+                <option value="11:00" selected>오전 11:00</option>
+                <option value="14:00">오후 02:00</option>
+                <option value="15:00">오후 03:00</option>
+                <option value="16:00">오후 04:00</option>
+                <option value="17:00">오후 05:00</option>
+              </select>
+              <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">expand_more</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Online Reservation Form -->
+        <div class="lg:col-span-6 bg-white rounded-2xl p-6 sm:p-7 shadow-sm border border-gray-100">
+          <form id="reservationForm" onsubmit="handleReservationSubmit(event)" class="space-y-4">
+            
+            <!-- Name Input -->
+            <div>
+              <label class="block text-xs font-bold text-gray-700 mb-1.5"><span class="text-red-500 mr-0.5">*</span>이름</label>
+              <input type="text" id="resName" required placeholder="실명을 입력해주세요." class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 focus:bg-white focus:outline-none focus:border-secondary transition-all">
+            </div>
+
+            <!-- Birth Date Input -->
+            <div>
+              <label class="block text-xs font-bold text-gray-700 mb-1.5"><span class="text-red-500 mr-0.5">*</span>생년월일</label>
+              <input type="text" id="resBirth" required placeholder="생년월일을 입력해주세요 (예: 19900101)" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 focus:bg-white focus:outline-none focus:border-secondary transition-all">
+            </div>
+
+            <!-- Phone Input -->
+            <div>
+              <label class="block text-xs font-bold text-gray-700 mb-1.5"><span class="text-red-500 mr-0.5">*</span>연락처</label>
+              <input type="tel" id="resPhone" required placeholder="전화번호를 입력해주세요 (예: 010-1234-5678)" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 focus:bg-white focus:outline-none focus:border-secondary transition-all">
+            </div>
+
+            <!-- Email Input -->
+            <div>
+              <label class="block text-xs font-bold text-gray-700 mb-1.5"><span class="text-red-500 mr-0.5">*</span>이메일</label>
+              <input type="email" id="resEmail" required placeholder="이메일을 입력해주세요." class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 focus:bg-white focus:outline-none focus:border-secondary transition-all">
+            </div>
+
+            <!-- Department Selection -->
+            <div>
+              <label class="block text-xs font-bold text-gray-700 mb-1.5"><span class="text-red-500 mr-0.5">*</span>진료과목</label>
+              <div class="relative">
+                <select id="resDept" required class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 appearance-none cursor-pointer focus:bg-white focus:outline-none focus:border-secondary transition-all">
+                  <option value="" disabled selected>진료과목을 선택해주세요</option>
+                  <option value="스마일라식 / 시력교정">스마일라식 / 시력교정센터</option>
+                  <option value="노안 · 백내장 센터">노안 · 백내장 센터</option>
+                  <option value="ICL 렌즈삽입술">ICL 렌즈삽입술 센터</option>
+                  <option value="망막 · 각막 질환 센터">망막 · 각막 질환 센터</option>
+                  <option value="안구건조증 클리닉">안구건조증 클리닉</option>
+                  <option value="소아안과 / 드림렌즈">소아안과 / 드림렌즈</option>
+                </select>
+                <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-xl">expand_more</span>
+              </div>
+            </div>
+
+            <!-- Patient Type Toggle (초진 / 재진) -->
+            <div>
+              <label class="block text-xs font-bold text-gray-700 mb-1.5"><span class="text-red-500 mr-0.5">*</span>진료구분</label>
+              <div class="grid grid-cols-2 gap-3">
+                <button type="button" id="btnChojin" onclick="setPatientType('초진')" class="py-3 rounded-full font-extrabold text-sm transition-all bg-black text-white shadow-md">초진</button>
+                <button type="button" id="btnJaejin" onclick="setPatientType('재진')" class="py-3 rounded-full font-extrabold text-sm transition-all bg-gray-100 text-gray-600 hover:bg-gray-200">재진</button>
+              </div>
+            </div>
+
+            <!-- Inquiries / Notes -->
+            <div>
+              <label class="block text-xs font-bold text-gray-700 mb-1">문의사항 및 기타 요청사항</label>
+              <p class="text-[11px] text-gray-400 mb-1.5">(당일수술을 희망하시는 분은 당일수술희망 이라고 작성부탁드립니다.)</p>
+              <textarea id="resNotes" rows="2" placeholder="내용을 입력해주세요. (500자 이내)" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-2.5 text-xs text-gray-900 focus:bg-white focus:outline-none focus:border-secondary transition-all resize-none"></textarea>
+            </div>
+
+            <!-- Privacy Agreement -->
+            <div class="flex items-center justify-between pt-1">
+              <label class="flex items-center gap-2 cursor-pointer text-xs text-gray-600 font-medium">
+                <input type="checkbox" required class="w-4 h-4 rounded border-gray-300 text-secondary focus:ring-secondary">
+                개인정보 수집 및 이용에 동의합니다.
+              </label>
+              <button type="button" onclick="alert('개인정보 수집 및 이용 안내:\n- 수집항목: 이름, 생년월일, 연락처, 이메일\n- 이용목적: 병원 진료 예약 접수 및 상담 안내\n- 보유기간: 진료 예약 처리 후 1년간 보관')" class="text-xs text-gray-400 underline hover:text-gray-600">자세히보기</button>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="pt-2">
+              <button type="submit" class="w-full py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-extrabold text-base shadow-lg shadow-blue-500/25 active:scale-[0.98] transition-all">
+                예약 신청하기
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Medical Info / Clinic Guidance Modal (진료안내) -->
+  <div id="guideModal" class="fixed inset-0 z-[999] hidden items-center justify-center p-4 sm:p-6 overflow-y-auto bg-black/75 backdrop-blur-md transition-all duration-300">
+    <div class="relative w-full max-w-5xl bg-white rounded-3xl shadow-2xl overflow-hidden my-auto border border-gray-100 transition-all">
+      
+      <!-- Modal Top Header -->
+      <div class="flex items-center justify-between px-8 py-5 border-b border-gray-100 bg-surface-bright">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
+            <span class="material-symbols-outlined text-2xl">schedule</span>
+          </div>
+          <div>
+            <h2 class="text-2xl font-black text-primary tracking-tight">진료안내 및 프로세스</h2>
+            <p class="text-xs text-on-surface-variant">BlueEye 안과의 진료시간표 및 11단계 정밀 진료 수술 시스템을 안내해 드립니다.</p>
+          </div>
+        </div>
+        <button onclick="closeGuideModal()" class="w-10 h-10 rounded-full bg-gray-100 hover:bg-primary hover:text-white flex items-center justify-center text-gray-500 transition-all active:scale-90">
+          <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+      </div>
+
+      <!-- Modal Content Body (+30px vertical padding) -->
+      <div class="px-6 sm:px-8 py-[54px] sm:py-[62px] space-y-10 max-h-[80vh] overflow-y-auto bg-[#f8fafc]">
+        
+        <!-- 1. 진료시간표 Title & Notice Banner -->
+        <div>
+          <h3 class="text-2xl font-black text-center text-gray-900 mb-6 tracking-wide">진료시간표</h3>
+          
+          <!-- Blue Notice Box (Matching User Reference Image 1) -->
+          <div class="bg-[#466580] text-white rounded-2xl p-6 sm:p-8 shadow-md relative overflow-hidden flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div class="space-y-2.5 w-fit max-w-full text-sm sm:text-base leading-relaxed">
+              <p class="text-amber-300 font-bold text-base sm:text-lg lg:whitespace-nowrap break-keep">
+                - 저희 BlueEye 안과의원은 고객편의를 위해 모든 진료과(안과) 100% 예약제를 시행하고 있습니다.
+              </p>
+              <p class="font-medium text-white/95 break-keep">* 당일접수 불가 (응급환자 제외)</p>
+              <p class="font-medium text-white/95 break-keep">* 단순 처방전 발급 및 약 조제 내원시에도 사전 예약이 필수입니다.</p>
+              <div class="pt-2 font-medium">
+                <p class="text-white font-bold mb-1">- 예약 방법 안내</p>
+                <div class="pl-3 space-y-1 text-sm text-white/90">
+                  <p>1) 대표전화: <span class="font-bold text-amber-300">1577-2639</span></p>
+                  <p>2) 온라인 예약: <button onclick="closeGuideModal(); openReservationModal();" class="inline-flex items-center gap-1 font-bold text-amber-300 underline hover:text-amber-200 transition-colors">온라인 예약 바로가기 <span class="material-symbols-outlined text-xs">arrow_forward</span></button></p>
+                  <p>3) 접수처 방문</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Calendar Icon Box -->
+            <div class="hidden md:flex items-center justify-center p-5 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20">
+              <span class="material-symbols-outlined text-5xl text-teal-300">calendar_month</span>
+            </div>
+          </div>
+
+          <!-- Hours Table -->
+          <div class="mt-6 bg-white rounded-2xl p-6 border border-gray-100 shadow-sm grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xs font-bold text-secondary uppercase block mb-1">평일 (월~금)</span>
+              <span class="text-lg font-black text-gray-900">09:00 - 18:30</span>
+              <span class="text-xs text-gray-400 block mt-1">정상 진료</span>
+            </div>
+            <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xs font-bold text-secondary uppercase block mb-1">토요일 (주말진료)</span>
+              <span class="text-lg font-black text-gray-900">09:00 - 15:00</span>
+              <span class="text-xs text-gray-400 block mt-1">점심시간 없이 진료</span>
+            </div>
+            <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xs font-bold text-amber-600 uppercase block mb-1">점심시간</span>
+              <span class="text-lg font-black text-gray-900">13:00 - 14:00</span>
+              <span class="text-xs text-gray-400 block mt-1">평일 적용</span>
+            </div>
+            <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xs font-bold text-red-500 uppercase block mb-1">일요일 / 공휴일</span>
+              <span class="text-lg font-black text-red-600">휴 무</span>
+              <span class="text-xs text-gray-400 block mt-1">응급센터 운영</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. 11단계 진료 & 수술 프로세스 (Matching User Reference Image 2) -->
+        <div class="pt-4 border-t border-gray-200">
+          <div class="text-center mb-8">
+            <h3 class="text-2xl font-black text-gray-900 tracking-wide mb-2">11단계 원스톱 정밀 진료 프로세스</h3>
+            <p class="text-xs text-gray-500">문의부터 정밀검사, 수술, 평생 사후케어까지 체계적인 시력 케어 시스템</p>
+          </div>
+
+          <!-- Steps Grid Flow -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            
+            <!-- Step 01 -->
+            <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm relative group hover:border-secondary transition-all">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-2xl font-black text-blue-600">01</span>
+                <h4 class="text-lg font-bold text-gray-900">문의</h4>
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed">전화·카카오톡 온라인 상담 및 궁금증 안내</p>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm relative group hover:border-secondary transition-all">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-2xl font-black text-blue-600">02</span>
+                <h4 class="text-lg font-bold text-gray-900">검사예약</h4>
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed">원하는 일자에 친절한 1:1 맞춤 상담 예약</p>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm relative group hover:border-secondary transition-all">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-2xl font-black text-blue-600">03</span>
+                <h4 class="text-lg font-bold text-gray-900">정밀검사</h4>
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed">50여가지 세밀한 초정밀 안구 데이터 측정</p>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm relative group hover:border-secondary transition-all">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-2xl font-black text-blue-600">04</span>
+                <h4 class="text-lg font-bold text-gray-900">상담</h4>
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed">검사수치와 눈 상태, 맞춤 수술방법 등 상세 상담</p>
+            </div>
+
+            <!-- Step 05 -->
+            <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm relative group hover:border-secondary transition-all">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-2xl font-black text-blue-600">05</span>
+                <h4 class="text-lg font-bold text-gray-900">진료</h4>
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed">코디네이터가 아닌 전문 의료진과 직접 진료</p>
+            </div>
+
+            <!-- Step 06 -->
+            <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm relative group hover:border-secondary transition-all">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-2xl font-black text-blue-600">06</span>
+                <h4 class="text-lg font-bold text-gray-900">재검사</h4>
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed">안전한 수술을 위한 교차 검증 재검사 진행</p>
+            </div>
+
+            <!-- Step 07 -->
+            <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm relative group hover:border-secondary transition-all">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-2xl font-black text-blue-600">07</span>
+                <h4 class="text-lg font-bold text-gray-900">수술예약</h4>
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed">개인별 눈 상태를 고려한 수술 날짜, 시간 확정</p>
+            </div>
+
+            <!-- Step 08 -->
+            <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm relative group hover:border-secondary transition-all">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-2xl font-black text-blue-600">08</span>
+                <h4 class="text-lg font-bold text-gray-900">수술</h4>
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed">최소한의 오차도 허용하지 않는 초정밀 레이저 수술</p>
+            </div>
+
+            <!-- Step 09 -->
+            <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm relative group hover:border-secondary transition-all">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-2xl font-black text-blue-600">09</span>
+                <h4 class="text-lg font-bold text-gray-900">비용정산</h4>
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed">과잉진료 없는 명확하고 합리적인 비용 안내</p>
+            </div>
+
+            <!-- Step 10 -->
+            <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm relative group hover:border-secondary transition-all">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-2xl font-black text-blue-600">10</span>
+                <h4 class="text-lg font-bold text-gray-900">평생관리보증제도</h4>
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed">안전 라식·라섹 평생케어 보증서 즉시 발급</p>
+            </div>
+
+            <!-- Step 11 -->
+            <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm relative group hover:border-secondary transition-all md:col-span-2">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-2xl font-black text-blue-600">11</span>
+                <h4 class="text-lg font-bold text-gray-900">관리</h4>
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed">평생 주치의 1:1 밀착 관리 및 수술 후 정기 시력 관리 프로토콜 시행</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Bottom Actions -->
+      <div class="flex items-center justify-end gap-3 px-8 py-4 border-t border-gray-100 bg-gray-50">
+        <button onclick="closeGuideModal()" class="px-6 py-3 rounded-xl bg-gray-200 text-gray-700 font-bold text-sm hover:bg-gray-300 transition-all">닫기</button>
+        <button onclick="closeGuideModal(); openReservationModal();" class="px-7 py-3 rounded-xl bg-primary text-white font-bold text-sm hover:bg-secondary transition-all shadow-md active:scale-95">온라인 예약하기</button>
+      </div>
+
     </div>
   </div>
   <script>
@@ -1681,6 +2046,133 @@
         });
       });
     });
+
+    // Reservation Calendar & Form Logic
+    let currentResYear = 2026;
+    let currentResMonth = 7; // August (0-indexed)
+    let selectedResDay = 6;
+    let selectedPatientType = '초진';
+
+    function openReservationModal() {
+      const modal = document.getElementById('reservationModal');
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        renderResCalendar();
+      }
+    }
+
+    function closeReservationModal() {
+      const modal = document.getElementById('reservationModal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    function changeResMonth(delta) {
+      currentResMonth += delta;
+      if (currentResMonth < 0) {
+        currentResMonth = 11;
+        currentResYear--;
+      } else if (currentResMonth > 11) {
+        currentResMonth = 0;
+        currentResYear++;
+      }
+      renderResCalendar();
+    }
+
+    function renderResCalendar() {
+      const monthText = document.getElementById('resMonthYearText');
+      const calendarDays = document.getElementById('resCalendarDays');
+      const dateDisplayText = document.getElementById('selectedDateDisplayText');
+
+      const monthStr = String(currentResMonth + 1).padStart(2, '0');
+      if (monthText) monthText.textContent = `${currentResYear} .${monthStr}`;
+
+      if (!calendarDays) return;
+      calendarDays.innerHTML = '';
+
+      const firstDay = new Date(currentResYear, currentResMonth, 1).getDay();
+      const daysInMonth = new Date(currentResYear, currentResMonth + 1, 0).getDate();
+
+      // Blank slots
+      for (let i = 0; i < firstDay; i++) {
+        const emptySpan = document.createElement('span');
+        emptySpan.className = 'py-3';
+        calendarDays.appendChild(emptySpan);
+      }
+
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dayBtn = document.createElement('button');
+        dayBtn.type = 'button';
+        const dayOfWeek = (firstDay + day - 1) % 7;
+        const isSelected = day === selectedResDay;
+
+        let textClass = 'text-gray-800';
+        if (dayOfWeek === 0) textClass = 'text-red-500';
+        if (dayOfWeek === 6) textClass = 'text-blue-500';
+
+        if (isSelected) {
+          dayBtn.className = 'w-10 h-10 mx-auto flex items-center justify-center rounded-full bg-black text-white font-bold transition-all shadow-md';
+        } else {
+          dayBtn.className = `w-10 h-10 mx-auto flex items-center justify-center rounded-full ${textClass} hover:bg-gray-100 transition-all font-medium`;
+        }
+
+        dayBtn.textContent = day;
+        dayBtn.onclick = () => {
+          selectedResDay = day;
+          renderResCalendar();
+        };
+        calendarDays.appendChild(dayBtn);
+      }
+
+      const selectedDayStr = String(selectedResDay).padStart(2, '0');
+      if (dateDisplayText) {
+        dateDisplayText.textContent = `${currentResYear}.${monthStr}.${selectedDayStr}`;
+      }
+    }
+
+    function setPatientType(type) {
+      selectedPatientType = type;
+      const btnChojin = document.getElementById('btnChojin');
+      const btnJaejin = document.getElementById('btnJaejin');
+      if (type === '초진') {
+        btnChojin.className = 'py-3 rounded-full font-extrabold text-sm transition-all bg-black text-white shadow-md';
+        btnJaejin.className = 'py-3 rounded-full font-extrabold text-sm transition-all bg-gray-100 text-gray-600 hover:bg-gray-200';
+      } else {
+        btnChojin.className = 'py-3 rounded-full font-extrabold text-sm transition-all bg-gray-100 text-gray-600 hover:bg-gray-200';
+        btnJaejin.className = 'py-3 rounded-full font-extrabold text-sm transition-all bg-black text-white shadow-md';
+      }
+    }
+
+    function handleReservationSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('resName').value;
+      const dateStr = document.getElementById('selectedDateDisplayText').textContent;
+      const time = document.getElementById('resTimeSelect').value;
+      const dept = document.getElementById('resDept').value;
+
+      alert(`[BlueEye 안과 온라인 예약 완료]\n\n▶ 예약자명: ${name}님\n▶ 예약일시: ${dateStr} ${time}\n▶ 진료과목: ${dept}\n▶ 진료구분: ${selectedPatientType}\n\n신청하신 예약 내역이 접수되었습니다. 담당 간호사가 입력하신 연락처로 알림톡/전화 안내를 드릴 예정입니다. 감사합니다.`);
+      closeReservationModal();
+    }
+
+    // Clinic Guidance Modal Logic
+    function openGuideModal() {
+      const modal = document.getElementById('guideModal');
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+    }
+
+    function closeGuideModal() {
+      const modal = document.getElementById('guideModal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
   </script>
 </body>
 
