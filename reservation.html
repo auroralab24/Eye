@@ -105,9 +105,9 @@
 
 <body class="bg-[#f8fafc] text-on-surface font-body-md overflow-x-hidden">
   <header class="w-full top-0 sticky z-50 bg-surface/95 dark:bg-on-background/95 backdrop-blur shadow-sm">
-    <div class="max-w-[1536px] mx-auto flex justify-between items-center px-margin-desktop py-4 relative">
+    <div class="max-w-[1536px] mx-auto flex justify-between items-center px-4 sm:px-margin-desktop py-2.5 sm:py-4 relative">
       <div class="flex items-center">
-        <a class="text-2xl sm:text-3xl font-black text-primary tracking-tight"
+        <a class="text-lg sm:text-2xl md:text-3xl font-black text-primary tracking-tight"
           href="index.html">BlueEye Clinic</a>
       </div>
       <nav class="hidden lg:flex items-center gap-10 ml-auto">
@@ -338,9 +338,12 @@
 
   <script>
     // Reservation Calendar & Form Logic
-    let currentResYear = 2026;
-    let currentResMonth = 7; // August (0-indexed)
-    let selectedResDay = 6;
+    const today = new Date();
+    let currentResYear = today.getFullYear();
+    let currentResMonth = today.getMonth(); // 0-indexed
+    let selectedResYear = today.getFullYear();
+    let selectedResMonth = today.getMonth();
+    let selectedResDay = today.getDate();
     let selectedPatientType = '초진';
 
     function changeResMonth(delta) {
@@ -380,7 +383,7 @@
         const dayBtn = document.createElement('button');
         dayBtn.type = 'button';
         const dayOfWeek = (firstDay + day - 1) % 7;
-        const isSelected = day === selectedResDay;
+        const isSelected = (day === selectedResDay && currentResYear === selectedResYear && currentResMonth === selectedResMonth);
 
         let textClass = 'text-gray-800';
         if (dayOfWeek === 0) textClass = 'text-red-500';
@@ -394,15 +397,18 @@
 
         dayBtn.textContent = day;
         dayBtn.onclick = () => {
+          selectedResYear = currentResYear;
+          selectedResMonth = currentResMonth;
           selectedResDay = day;
           renderResCalendar();
         };
         calendarDays.appendChild(dayBtn);
       }
 
+      const selectedMonthStr = String(selectedResMonth + 1).padStart(2, '0');
       const selectedDayStr = String(selectedResDay).padStart(2, '0');
       if (dateDisplayText) {
-        dateDisplayText.textContent = `${currentResYear}.${monthStr}.${selectedDayStr}`;
+        dateDisplayText.textContent = `${selectedResYear}.${selectedMonthStr}.${selectedDayStr}`;
       }
     }
 
